@@ -20,9 +20,11 @@ class Square extends React.Component {
   
     render() {
       const status = 'Next player: X';
+      const editstatus = 'First Proj with react';
   
       return (
         <div>
+          <div className="editstatus">{editstatus}</div>
           <div className="status">{status}</div>
           <div className="board-row">
             {this.renderSquare(0)}
